@@ -67,16 +67,18 @@ nav ul li a:hover,
 .more-nav a:hover {
     background-color: #0080ff86;
     display: inline-block;
-    padding: 5px;
+    padding: 8px;
     margin: 0 5px;
     width: fit-content;
 }
 
 nav ul li a.active {
-    background-color: var(--hover-color);
     color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    padding: 5px;
+    border-bottom: 2px double var(--secondary-color);
+    border-radius: 0%;
+    padding: 8px;
     margin: 0 5px;
     width: fit-content;
 }
+
+#result { margin-top: 20px; }

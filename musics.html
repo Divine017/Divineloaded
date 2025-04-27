@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omotayo Ayobami Oyedele">
+    <meta name="description" content="Explore and enjoy the latest music, videos, blogs, and more on Divineloaded. Your hub for entertainment and updates.">
+    <link rel="stylesheet" href="styles/assets.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Port+Lligat+Sans&family=Roboto:wght@100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Home | Divineloaded</title>
+    <script src="scripts/assets.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Divineloaded - Explore Music, Videos, Blogs & More">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://divine017.github.io/Divineloaded/images/logo1.jpeg">
+    <meta property="og:url" content="https://divine017.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Explore the latest music, videos, blogs, and entertainment updates on Divineloaded. Stay connected and enjoy fresh content daily.">
+    <meta property="og:site_name" content="Divineloaded">
+</head>
+<body> 
+    <header title="Divineloaded Home" class="header">
+        <h1>Divineloaded</h1>
+        <a href="index.html"><img src="images/logo1.png" alt="Divineloaded Logo" loading="lazy"></a>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav id="nav-menu">
+            <ul class="desktop-nav">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="musics.html" title="Musics">Music</a></li>
+                <li><a href="videos.html" title="Videos">Videos</a></li>
+                <li><a href="pictures.html" title="Pictures">Pictures</a></li>
+                <li><a href="blogs.html" title="Blogs">Blogs</a></li>
+                <li><a href="about.html" title="About Us">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Music Player</h2>  
+    
+    <!-- Audio Element -->  
+    <audio controls>  
+        <source src="musics/Omah-Lay_With_You.mp3" type="audio/mpeg">  
+        <source src="path/to/your-audio-file.ogg" type="audio/ogg">  
+        Your browser does not support the audio element.  
+    </audio>  
+    <br>  
+    <a href="musics/Omah-Lay_With_You.mp3" download>  
+        Download Music  
+    </a>  
+
+    <h1>Video Player</h1>  
+    
+    <!-- Video Element -->  
+    <video width="640" height="360" controls>  
+        <source src="videos/Download(12).mp4" type="video/mp4">  
+        <source src="path/to/your-video-file.webm" type="video/webm">  
+        Your browser does not support the video tag.  
+    </video>  
+    <br>
+    <a href="videos/Download(12).mp4" download>  
+        Download Video  
+    </a>
+
+    <audio preload="auto" controls>  
+        <source src="musics/Omah-Lay_With_You.mp3" type="audio/mpeg">  
+        Your browser does not support the audio element.  
+    </audio>  
+    
+    <video preload="metadata" controls width="640" height="360">  
+        <source src="videos/Download(12).mp4" type="video/mp4">  
+        Your browser does not support the video tag.  
+    </video>  
+    
+    <video preload="none" controls width="640" height="360">  
+        <source src="videos/Download(12).mp4" type="video/mp4">  
+        Your browser does not support the video tag.  
+    </video>
+
+    <h1>Simple Calculator</h1>  
+    <input type="number" id="num1" placeholder="Enter first number">  
+    <input type="number" id="num2" placeholder="Enter second number">  
+    <button onclick="addNumbers()">Add</button>  
+    
+    <div id="result"></div>
+
+    <h1>Embedded Video</h1>  
+    
+    <!-- Embedded Video Example -->  
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wbC-xpLmKKs?si=agBTsJchgqMVWn7K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+
+    <h2>Image</h2>  
+    <a href="path/to/your-image.jpg" download="downloaded-image.jpg">  
+        <img src="path/to/your-image.jpg" alt="Beautiful View" width="200" height="150">  
+        Download Image  
+    </a>  
+    
+    <!-- Downloadable Video -->  
+    <h2>Video</h2>  
+    <video width="640" height="360" controls>  
+        <source src="path/to/your-video-file.mp4" type="video/mp4">  
+        Your browser does not support the video tag.  
+    </video>  
+    <a href="path/to/your-video-file.mp4" download="myvideo.mp4">Download Video</a>  
+
+    <!-- Downloadable App Resource -->  
+    <h2>Application Resource</h2>  
+    <a href="path/to/your-app.zip" download="myapp.zip">Download My App</a>  
+</body>  
+</html>  

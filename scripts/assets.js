@@ -1,5 +1,6 @@
 function displayCurrentPage() {
   const header = document.querySelector('header');
+  const navLinks = document.querySelectorAll('.desktop-nav a'); // <-- Add this line
   let currentPage = window.location.pathname.split('/').pop().replace('.html', '');
   if (currentPage === '') currentPage = 'index';
   const formattedPageName = currentPage.charAt(0).toUpperCase() + currentPage.slice(1);
@@ -20,3 +21,29 @@ function displayCurrentPage() {
     }
   });
 }
+
+const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            navMenu.setAttribute("aria-expanded", navMenu.classList.contains("active").toString());
+            
+            if (navMenu.classList.contains("active")) {
+                navMenu.style.zIndex = "10";
+            } else {
+                navMenu.style.zIndex = "";
+            }
+        });
+    }
+
+function addNumbers() {  
+            const num1 = parseFloat(document.getElementById('num1').value);  
+            const num2 = parseFloat(document.getElementById('num2').value);  
+            const sum = num1 + num2;  
+            document.getElementById('result').innerText = 'The sum is: ' + sum;  
+        }
+
+displayCurrentPage();
