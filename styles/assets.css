@@ -81,5 +81,9 @@ i {
     font-size: 1.2rem;
     margin-right: 5px;
 }
+.hero-image {
+    width: 100%;
+    height: 300px;
+}
 
 #result { margin-top: 20px; }

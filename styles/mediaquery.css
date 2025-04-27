@@ -350,31 +350,8 @@ iframe {
   }
 
   header h1 {
-    font-size: 10px;
+    font-size: 20px;
 }
-
-  .hero-image img {
-    width: 80%;
-    height: 250px;
-    aspect-ratio: 1 / 1;
-  }
-
-  .info-section {
-    flex-direction: column;
-  }
-
-  .info-section div {
-    margin-bottom: 20px;
-  }
-
-  .business-listings {
-    flex-direction: column;
-  }
-
-  .business-card {
-    margin-bottom: 20px;
-  }
-
   .footer-content {
     flex-direction: column;
   }
