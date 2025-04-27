@@ -8,7 +8,17 @@ function displayCurrentPage() {
   // Add the current page name for mobile-only display
   const pageNewElement = document.createElement('div');
   pageNewElement.className = 'current-page-name mobile-only';
-  pageNewElement.textContent = formattedPageName === 'Index' ? 'Home' : formattedPageName;
+  // Map page names to Font Awesome icon classes
+  const pageIcons = {
+    index: 'fas fa-home',
+    blogs: 'fas fa-blog',
+    about: 'fas fa-info-circle',
+    musics: 'fas fa-music',
+    videos: 'fas fa-video',
+    pictures: 'fas fa-image'
+  };
+  const iconClass = pageIcons[currentPage.toLowerCase()] || 'fas fa-file';
+  pageNewElement.innerHTML = `<i class="${iconClass}"></i> ${formattedPageName === 'Index' ? 'Home' : formattedPageName}`;
 
   header.insertBefore(pageNewElement, header.querySelector('nav'));
 
