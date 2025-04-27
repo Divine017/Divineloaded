@@ -23,8 +23,8 @@
     <meta property="og:site_name" content="Divineloaded">
 </head>
 <body> 
-    <header title="Divineloaded Home" class="header">
-        <h1>Divineloaded</h1>
+    <header class="header">
+        <h1 title="Divineloaded Home">Divineloaded</h1>
         <a href="index.html"><img src="images/logo1.png" alt="Divineloaded Logo" loading="lazy"></a>
         <div class="hamburger" id="hamburger">
             <span class="bar"></span>
@@ -33,12 +33,78 @@
         </div>
         <nav id="nav-menu">
             <ul class="desktop-nav">
-                <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="musics.html" title="Musics">Music</a></li>
-                <li><a href="videos.html" title="Videos">Videos</a></li>
-                <li><a href="pictures.html" title="Pictures">Pictures</a></li>
-                <li><a href="blogs.html" title="Blogs">Blogs</a></li>
-                <li><a href="about.html" title="About Us">About Us</a></li>
+                <li><a href="index.html" title="Music">
+                <i class="fas fa-home"></i>Home</a></li>
+                <li><a href="musics.html" title="Music">
+                <i class="fas fa-music"></i>Music</a></li>
+                <li><a href="videos.html" title="Videos">
+                <i class="fas fa-video"></i>Videos</a></li>
+                <li><a href="pictures.html" title="Pictures">
+                <i class="fas fa-image"></i>Pictures</a></li>
+                <li><a href="blogs.html" title="Blogs">
+                <i class="fas fa-blog"></i>Blogs</a></li>
+                <li><a href="about.html" title="About Us">
+                <i class="fas fa-info-circle"></i>About Us</a></li>
             </ul>
         </nav>
     </header>
+
+    <section class="hero">
+        <img src="images/logo1.png" alt="Divineloaded Logo" class="hero-image">
+        <h2>Welcome to Divineloaded</h2>
+        <p>Your hub for the latest music, videos, blogs, and entertainment updates.</p>
+        <a href="musics.html" class="cta-btn">Explore Music</a>
+    </section>
+    
+    <!-- Featured Content -->
+    <section class="featured">
+      <h3>Featured Music</h3>
+      <!-- Cards or slider for music -->
+    </section>
+    
+    <!-- About Section -->
+    <section class="about">
+      <h3>About Us</h3>
+      <p>Divineloaded brings you the freshest entertainment content daily. Discover new music, trending videos, and insightful blogs.</p>
+    </section>
+    
+    <!-- Latest Updates -->
+    <section class="latest">
+      <h3>Latest Updates</h3>
+      <!-- Grid or list of latest posts -->
+    </section>
+
+    <section class="quick-links">
+        <h3>Quick Links</h3>
+        <div class="links-container">
+            <a href="musics.html" class="quick-links" title="Music">
+                <i class="fas fa-music"></i>
+                <span>Music</span>
+            </a>
+            <a href="videos.html" class="quick-links" title="Videos">
+                <i class="fas fa-video"></i>
+                <span>Videos</span>
+            </a>
+            <a href="pictures.html" class="quick-links" title="Pictures">
+                <i class="fas fa-image"></i>
+                <span>Pictures</span>
+            </a>
+            <a href="blogs.html" class="quick-links" title="Blogs">
+                <i class="fas fa-blog"></i>
+                <span>Blogs</span>
+            </a>
+            <a href="about.html" class="quick-links" title="About Us">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+      <h3>Stay Updated</h3>
+      <form>
+        <input type="email" placeholder="Your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
