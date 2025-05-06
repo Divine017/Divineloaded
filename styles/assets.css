@@ -3,7 +3,7 @@
     --tertiary-color: #333333;
     --background-color: #dfdcdc;
     --hf-color: #004080;
-    --hover-color: tomato;
+    --hover-color: red;
 }
 * {
     box-sizing: border-box;
@@ -19,12 +19,13 @@ body {
 header {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
+    flex-shrink: 1;
     background-color: var(--hf-color);
     color: var(--secondary-color);
     padding: 15px 20px;
 }
 header h1 {
+    flex-shrink: 1;
     font-size: 20px;
     font-family: "Josefin Sans", sans-serif;
     margin-left: 5px;
@@ -133,5 +134,24 @@ i {
     padding: 8px;
     margin: 0 8px;
     width: fit-content;
+}
+.quick-links {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+.quick-link {
+    padding: 8px;
+}
+.quick-links a {
+    text-decoration: none;
+}
+.quick-links a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+.featured,.latest,.about,.newsletter {
+    margin: 20px;
 }
 #result { margin-top: 20px; }
